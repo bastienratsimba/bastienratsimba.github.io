@@ -1,0 +1,172 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    color: #151A10;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #E3F7BA;
+    margin: 0;
+}
+
+.small-title {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-size: 0.85rem;
+    font-weight: bold;
+    color: #577538;
+}
+
+a {
+    color: #577538;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #3D522A;
+}
+
+section {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 
+    2rem 2rem;
+}
+
+.navbar {
+    background-color: #1F2917;
+    padding: 1rem 2rem;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 0;
+    padding: 0;
+}
+
+.navbar a {
+    color: #E3F7BA;
+    font-weight: bold;
+}
+
+.navbar a:hover {
+    color: #BDEE63;
+}
+
+/* ===== HERO ===== */
+.hero {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4rem 2rem 2rem;
+    text-align: left;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+.hero h2 {
+    font-weight: normal;
+    color: #3D522A;
+    margin-bottom: 1.5rem;
+}
+
+footer {
+    background-color: #1F2917;
+    color: #E3F7BA;
+    text-align: center;
+    padding: 1rem 2rem;
+}
+
+.skills-list {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin-top: 1.5rem;
+    justify-content: flex-start;
+}
+
+.skills-list li {
+    display: flex;
+    align-items: center;
+    gap: 0.4rem;
+    font-weight: bold;
+}
+
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5rem;
+}
+
+.services-card {
+    background-color: #ffffff;
+    padding: 2rem;
+    border-radius: 12px;
+    text-align: left;
+}
+
+.services {
+    padding-top: 6rem;
+}
+
+.nav-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #577538;
+    color: #E3F7BA;
+    padding: 0.8rem 1.8rem;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.nav-button:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.15);
+    color: #E3F7BA;
+}
+
+.contact {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
+    text-align: left;
+}
+
+.contact-text {
+    grid-column: 1;
+}
+
+.contact-info {
+    grid-column: 2;
+    margin-top: 2.2rem;
+}
+
+.contact-button {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 2.2rem;
+}
+
+.contact-text>*:first-child,
+.contact-info>*:first-child,
+.contact-button>*:first-child {
+    margin-top: 0;
+}
+
+.contact-button p {
+    font-size: 0.85rem;
+    margin: 0;
+}
